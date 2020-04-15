@@ -87,8 +87,11 @@ def getvalip():
 	output.write('got the html')
 	print(res.status_code)
 
+def main():
+	getvalip()
 
-getvalip()
+if __name__ == '__main__':
+	main()
 # va = g(https,'https',url)
 # print(va)
 
