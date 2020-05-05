@@ -3,7 +3,9 @@ import random, requests, sys
 
 output = sys.stdout
 output.write('connect to mysql server\n')
-db = db.connect(user='root', passwd='Fighting1.', db='ip')
+user = "请输入MySQL目标数据库用户名:\n"
+password = "请输入MySQL目标数据库用户名{}对应的密码:\n".format(user)
+db = db.connect(user=user, passwd=password, db='ip')
 output.write('to get the mysql cursor\n')
 cur = db.cursor()
 
